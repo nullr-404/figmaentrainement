@@ -1,37 +1,343 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600&display=swap');
-:root{
-    /* Colors */
+/*-----------------------import de textes google---------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700&display=swap');
+
+/*-----------------couleurs de la maquette------------*/
+:root {
     --red-highlight: #D2483D;
     --light-grey: #F3F3F3;
     --black: #000000;
     --white: #FFFFFF;
 
-    /* Text configuration */
-    --body-font: 'Montserrat';
-    --body-highlight-font: 'Montserrat';
-    --header-font: 'Bebas Neue';
-    --title-font: 'Bebas Neue';
-
-    --body-font-weight: 400;
-    --body-highlight-font-weight: 600;
-    --header-font-weight: 400;
-    --title-font-weight: 400;
-
-    --body-font-size: 1.25rem;
-    --body-highlight-font-size: 1.25rem;
-    --header-font-size: 4.5rem;
-    --title-font-size: 1.5rem;
-
-    --body-line-height: 1.5rem;
-    --body-highlight-line-height: 1.5rem;
-    --header-line-height: 5.375rem;
-    --title-line-height: 1.75rem;
-
-    scrollbar-width: none;
-
+    --body-font: 'Montserrat', sans-serif;
+    --body-highlight-font: 'Montserrat', sans-serif;
+    --header-font: 'Bebas Neue', sans-serif;
+    --title-font: 'Bebas Neue', sans-serif;
 }
-.appBar__navItem:nth-child(1) {
-    text-decoration: underline var(--red-highlight);
-    text-underline-offset: 0.25rem;
-    text-decoration-thickness: 0.188rem;}
+
+/* les marges tout element html grace a * */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    background-color: var(--light-grey);
+    color: var(--black);
+    font-family: var(--body-font);
+}
+
+/*----------------nav bar----------------*/
+
+header {
+    width: 100%;
+    height: 95px;
+    display: flex;
+    align-items: center;
+    padding: 15px 45px;
+    gap: 30px;
+}
+
+/* Logo */
+.petitLogo {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+
+/* Liens du menu */
+.appBar_nav {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.appBar__navItem {
+    position: relative;
+    color: var(--black);
+    text-decoration: none;
+    font-family: var(--header-font);
+    font-size: 21px;
+    line-height: 1;
+}
+
+
+
+/*-----------------section accueil-------------*/
+
+.presentYUMMY{
+    width: 100%;
+    min-height: 475px;
+
+    /* Le contenu est placé à côte et centré */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+
+    padding: 45px 20px 80px;
+}
+
+
+
+/* Gros titre de la page d'accueil */
+.titreAccueil{
+    font-family: var(--title-font);
+    font-size: 57px;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 25px;
+}
+
+.description{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 28px;
+}
+
+/* évidence  texte */
+.descriptionRouge{
+    color: var(--red-highlight);
+}
+
+/* Bouton principal */
+.presentYUMMY_click_and_collect, .click_and_collect {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 175px;
+    height: 55px;
+
+    background-color: var(--black);
+    color: var(--white);
+
+    text-decoration: none;
+    font-family: var(--header-font);
+    font-size: 19px;
+
+    transition: background-color 0.2s ease;
+}
+
+
+
+/* gros logo */
+.grosLogo{
+    width: 255px;
+    height: 255px;
+    object-fit: contain;
+}
+
+/*-----------------------adresse photos galerie-----------------*/
+
+.adresse {
+    width: 100%;
+    padding: 30px 0 70px;
+}
+
+/* Titres des différentes parties du site */
+.adresse h2,
+.savoir-faire h2,
+.socials h2,
+.contact h2 {
+    width: fit-content;
+    margin: 0 auto 35px;
+
+    position: relative;
+
+    font-family: var(--header-font);
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+/* Trait rouge sous les titres */
+.adresse h2::after,
+.savoir-faire h2::after,
+.socials h2::after,
+.contact h2::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -6px;
+
+    height: 3px;
+    background-color: var(--red-highlight);
+}
+
+/* Galerie des adresses */
+.adresse_gallery {
+    width: min(880px, 90%);
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 80px;
+}
+
+.adresse_gallery > div {
+    width: 100%;
+}
+
+/* Photos  adresses */
+.adresse_gallery img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1.55 / 1;
+    object-fit: cover;
+}
+
+.adresse_gallery p {
+    margin-top: 12px;
+
+    font-family: var(--body-font);
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+.adresse_gallery strong {
+    font-weight: 700;
+}
+
+/*----------------------------barre daction----------------------------------------*/
+
+.cta_banner {
+    width: 100%;
+    height: 170px;
+
+    background-color: var(--red-highlight);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cta_banner p {
+    margin-bottom: 15px;
+
+    color: var(--white);
+    font-family: var(--body-font);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Le bouton garde les mêmes dimensions que les autres */
+.cta_banner_link {
+    width: 175px;
+    height: 55px;
+}
+
+/*-----------savoir faire-----------------------*/
+
+.savoir-faire {
+    width: min(920px, 90%);
+    margin: 0 auto;
+    padding: 40px 0 50px;
+
+    text-align: center;
+}
+
+.savoir-faire h2 {
+    margin-bottom: 28px;
+}
+
+.savoir-faire p {
+    font-family: var(--body-font);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.35;
+}
+
+/*______________________________reseaux--------------*/
+
+.socials {
+    width: 100%;
+    padding: 20px 0 55px;
+}
+
+.socials h2 {
+    margin-bottom: 35px;
+}
+
+/* Grille  images */
+.socials-gallery {
+    width: 695px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px 50px;
+}
+
+.socials-gallery img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+/*--------------------------------------contact------------------*/
+
+.contact {
+    width: min(900px, 90%);
+    margin: 0 auto;
+    padding: 5px 0 70px;
+
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 28px;
+}
+
+.contact p {
+    font-family: var(--body-font);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.35;
+}
+
+.contact strong {
+    font-weight: 700;
+}
+
+.contact a {
+    color: var(--black);
+    text-decoration: none;
+}
+
+/*----------------------------FOOTER--------------------------------*/
+footer {
+    width: 100%;
+    min-height: 180px;
+
+    background-color: var(--black);
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    gap: 45px;
+    padding: 40px 65px;
+}
+
+footer a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
 

@@ -8,24 +8,24 @@
 </head>
 <body>
     <header>
-        <img src="assets/images/Logo%20S.svg" alt="logo S YUMMY NOUILLES">
+        <img src="assets/images/Logo%20S.svg" alt="logo S YUMMY NOUILLES" class="petitLogo">
         <nav class="appBar_nav">
             <a href="home.html" class="appBar__navItem">ACCUEIL</a>
             <a href="menu.html" class="appBar__navItem">MENU</a>
             <a href="contact.html" class="appBar__navItem">CONTACT</a>
         </nav>
     </header>
-    <section>
-        <div>
-            <h1>YUMMY NOUILLES</h1>
-            <p>Les nouilles les plus <span>yummy</span> de tout Paris</p>
-            <a href="index.html">click & collect</a>
+    <section class="presentYUMMY">
+        <div class="presentYUMMY__container">
+            <h1 class="titreAccueil">YUMMY NOUILLES</h1>
+            <p class="description">Les nouilles les plus <span class="descriptionRouge">yummy</span> de tout Paris</p>
+            <a href="index.html" class="presentYUMMY_click_and_collect">click & collect</a>
         </div>
-        <img src="assets/images/Logo%20XL.svg" alt="logo XL YUMMY NOUILLES">
+        <img src="assets/images/Logo%20XL.svg" alt="logo XL YUMMY NOUILLES" class="grosLogo">
     </section>
-    <section class="adress">
+    <section class="adresse">
         <h2>Nos Adresses</h2>
-        <div class="adress_gallery">
+        <div class="adresse_gallery">
             <div>
                 <img src="assets/images/Facade_Yummy_Nouille_1_1_20.jpg" alt="Photo du restaurant Yummy Nouilles rue du Lancry à Paris"/>
                 <p><strong>Yummy Noodle</strong><br> 185 rue du Lancry <br> 75010 Paris</p>
@@ -88,4 +88,15 @@
         /></a>
     </footer>
 </body>
+<style>
+    .appBar__navItem:first-child::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -6px;
+        height: 3px;
+        background-color: var(--red-highlight);
+    }
+</style>
 </html>

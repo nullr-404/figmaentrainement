@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>YUMMY NOUILLES - MENU</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+<header>
+    <img src="assets/images/Logo%20S.svg" alt="logo S YUMMY NOUILLES" class="petitLogo">
+    <nav class="appBar_nav">
+        <a href="home.html" class="appBar__navItem">ACCUEIL</a>
+        <a href="menu.html" class="appBar__navItem">MENU</a>
+        <a href="contact.html" class="appBar__navItem">CONTACT</a>
+    </nav>
+</header>
+<div class="cta_banner cta_banner_top">
+
+    <p>Commandez maintenant !</p>
+    <a href="contact.html" class="click_and_collect cta_banner_link">Click & Collect</a>
+
+</div>
+<section class="menuYUMMY">
+    <div class="menuYUMMY__container">
+        <h1 class="titreMenu">MENU</h1>
+        <p class="accroche_menu">Nos menus sont <span class="accroche_menu_rouge">communs</span> à tous nos restaurants</p>
+    </div>
+    <div class="menuYUMMY__Menu">
+        <img src="assets/images/Group.svg" alt="Logo M YUMMY NOUILLES" class="moyenLogo">
+        <div class="entrees_menu">
+            <h2>entrées</h2>
+            <div class="raviolis_menu">
+                <p><strong>Jiaozi faits maison végétariens</strong></p>
+                <br>
+                <p>Raviolis fourrés au maïs et champignons</p>
+            </div>
+            <div class="tofu_menu">
+                <p><strong>Tofu frit</strong></p>
+                <br>
+                <p>Tofu frit à la taïwanaise</p>
+            </div>
+            <div class="truffe_menu">
+                <p><strong>Xiaolongbao à la truffe</strong></p>
+                <br>
+                <p>Délicats raviolis farcis à la viande</p>
+            </div>
+        </div>
+        <div class="plats_menu">
+            <h2>plats</h2>
+            <div class="Biang_menu">
+                <p><strong>Biang biang mian végétariennes</strong></p>
+                <br>
+                <p>Épaisses nouilles faites à la main accompagnées d’un bouillon</p>
+            </div>
+            <div class="Soupe_menu">
+                <p><strong>Soupe de nouilles au boeuf</strong></p>
+                <br>
+                <p>Nouilles faites maison dans un bouillon légèrement relevé</p>
+            </div>
+            <div class="Nouilles_menu">
+                <p><strong>Nouilles froides au sésame</strong></p>
+                <br>
+                <p>Nouilles froides au poulet, sauce au sésame</p>
+            </div>
+        </div>
+        <div class="desserts_menu">
+            <h2>desserts</h2>
+            <div class="Pudding_menu">
+                <p><strong>Pudding au tofu</strong></p>
+                <br>
+                <p>Tofu soyeux baignant dans un sirop au gingembre</p>
+            </div>
+        </div>
+        <div class="boissons_menu">
+            <h2>boissons</h2>
+            <p><strong>Biang biang mian végétariennes</strong></p>
+            <p><strong>Biang biang mian végétariennes</strong></p>
+
+        </div>
+    </div>
+</section>
+<section class="contact">
+    <h2>Contactez-nous</h2>
+    <p>
+        Vous souhaitez nous poser une question, nous faire un feedback, ou
+        tout simplement nous contacter ? Écrivez-nous à
+        <strong><a href="mailto:yummy@noodles.fr">yummy@noodles.fr</a></strong> ou appelez nous au
+        <strong>01 13 86 23 42</strong>
+    </p>
+</section>
+<footer>
+    <a href="https://www.instagram.com/" target="_blank"
+    ><img src="assets/icons/instagram.svg" alt="logo instagram"
+    /></a>
+    <a href="https://www.facebook.com/" target="_blank" ><img src="assets/icons/facebook.svg" alt="logo facebook" /></a>
+    <a href="https://www.google.com/maps/" target="_blank"
+    ><img src="assets/icons/maps-and-flags.svg" alt="logo maps"
+    /></a>
+</footer>
+</body>
+<style>
+    .appBar__navItem:nth-child(2)::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -6px;
+        height: 3px;
+        background-color: var(--red-highlight);
+    }
+</style>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>YUMMY NOUILLES - CONTACT</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+<header>
+    <img src="assets/images/Logo%20S.svg" alt="logo S YUMMY NOUILLES" class="petitLogo">
+    <nav class="appBar_nav">
+        <a href="home.html" class="appBar__navItem">ACCUEIL</a>
+        <a href="menu.html" class="appBar__navItem">MENU</a>
+        <a href="contact.html" class="appBar__navItem">CONTACT</a>
+    </nav>
+</header>
+<div class="cta_banner cta_banner_top">
+
+    <p>Commandez maintenant !</p>
+    <a href="contact.html" class="click_and_collect cta_banner_link">Click & Collect</a>
+
+</div>
+<section class="contact">
+    <h2>Contactez-nous</h2>
+    <p>
+        Vous souhaitez nous poser une question, nous faire un feedback, ou
+        tout simplement nous contacter ? Écrivez-nous à
+        <strong><a href="mailto:yummy@noodles.fr">yummy@noodles.fr</a></strong> ou appelez nous au
+        <strong>01 13 86 23 42</strong>
+    </p>
+</section>
+<footer>
+    <a href="https://www.instagram.com/" target="_blank"
+    ><img src="assets/icons/instagram.svg" alt="logo instagram"
+    /></a>
+    <a href="https://www.facebook.com/" target="_blank" ><img src="assets/icons/facebook.svg" alt="logo facebook" /></a>
+    <a href="https://www.google.com/maps/" target="_blank"
+    ><img src="assets/icons/maps-and-flags.svg" alt="logo maps"
+    /></a>
+</footer>
+</body>
+<style>
+    .appBar__navItem:nth-child(3)::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -6px;
+        height: 3px;
+        background-color: var(--red-highlight);
+    }
+</style>
+</html>
