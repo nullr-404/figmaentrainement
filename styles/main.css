@@ -154,6 +154,9 @@ header {
     line-height: 1;
     text-transform: uppercase;
 }
+.contact h2 {
+    margin-top: 72px;
+}
 
 /* Trait rouge sous les titres */
 .adresse h2::after,
@@ -211,6 +214,7 @@ header {
 .cta_banner {
     width: 100%;
     height: 170px;
+    margin-top: 43px;
 
     background-color: var(--red-highlight);
 
@@ -231,8 +235,8 @@ header {
 
 /* Le bouton garde les mêmes dimensions que les autres */
 .cta_banner_link {
-    width: 175px;
-    height: 55px;
+    width: 216px;
+    height: 56px;
 }
 
 /*-----------savoir faire-----------------------*/
@@ -340,4 +344,114 @@ footer img {
     height: 32px;
     object-fit: contain;
 }
+.menuYUMMY {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1129px;
+}
+.menuYUMMY__container{
+    width: 500px;
+    margin-bottom: 38px;
+}
+.titreMenu{
+    font-family: Bebas Neue;
+    font-weight: 400;
+    font-size: 72px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
 
+    margin-top: 36px;
+
+}
+.accroche_menu{
+    width: 498px;
+    height: 24px;
+    top: 468px;
+    left: 151px;
+    angle: 0 deg;
+    opacity: 1;
+
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 20px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
+.accroche_menu_rouge{
+    color: var(--red-highlight);
+}
+.menuYUMMY__Menu{
+    background-color: var(--white);
+    width: 1129px;
+    height: 1598px;
+    top: 528px;
+    left: 151px;
+    angle: 0 deg;
+    opacity: 1;
+    padding-top: 67px;
+    padding-bottom: 72px;
+
+}
+.moyenLogo{
+    margin-top: 70px;
+    margin-left: 506px;
+    margin-bottom: 47px;
+}
+.detailsMenu{
+    margin-left: 94.39px;
+    width: 940px;
+    text-align: center;
+}
+
+.titreMENUcard{
+
+    font-family: Bebas Neue;
+    position: relative;
+    display: table;
+    font-weight: 400;
+    font-size: 27px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin-bottom: 23px;
+    height: 60.73px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.titreMENUcard::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: var(--red-highlight);
+    margin-top: 3.7px;
+}
+
+.Adresses_nouilles{
+    height: 500px;
+    top: 445px;
+    left: 160px;
+    angle: 0 deg;
+    opacity: 1;
+    justify-content: center;
+
+}
+.Adresses_nouilles>h1{
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 96px;
+    font-family: Bebas Neue;
+    font-weight: 400;
+    font-size: 72px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
+.Adresses_nouilles__container{
+    display: flex;
+    justify-content: center;
+}
